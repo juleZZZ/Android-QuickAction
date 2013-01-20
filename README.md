@@ -8,6 +8,7 @@ Which wasn't updated for the last 2 years. Including the library with ActionBarS
 Samples of how to use the library are available at the original repo. But here's a quick code snippet:
 
 `
+
 public class QuickActionActivity extends SherlockActivity implements OnClickListener {
 
     private QuickActionWidget mBar;
@@ -91,4 +92,5 @@ public class QuickActionActivity extends SherlockActivity implements OnClickList
         
     }
 }
+
 `
