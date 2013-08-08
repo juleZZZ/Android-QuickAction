@@ -76,6 +76,11 @@
 		<item name="android:layout_width">fill_parent</item>
 		<item name="android:layout_height">65dp</item>
 	</style>
+	<style name="GreenDroid.Widget.QuickAction.Grid.Image.Item" parent="@style/GreenDroid.Widget.QuickAction.Item">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:padding">4dp</item>
+	</style>
 	   
    <!-- PopDownMenu -->
 	<style name="GreenDroid.Animation" />

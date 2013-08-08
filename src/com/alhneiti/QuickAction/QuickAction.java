@@ -35,21 +35,36 @@ public class QuickAction {
 
     /* package */WeakReference<View> mView;
 
+    public QuickAction(Drawable d) {
+        mDrawable = d;
+        mTitle = "";
+    }
+    
     public QuickAction(Drawable d, CharSequence title) {
         mDrawable = d;
         mTitle = title;
     }
 
+    public QuickAction(Context ctx, int drawableId) {
+        mDrawable = ctx.getResources().getDrawable(drawableId);
+        mTitle = "";
+    }
+    
     public QuickAction(Context ctx, int drawableId, CharSequence title) {
         mDrawable = ctx.getResources().getDrawable(drawableId);
         mTitle = title;
     }
 
+    public QuickAction(Context ctx, Drawable d) {
+        mDrawable = d;
+        mTitle = "";
+    }
+    
     public QuickAction(Context ctx, Drawable d, int titleId) {
         mDrawable = d;
         mTitle = ctx.getResources().getString(titleId);
     }
-
+    
     public QuickAction(Context ctx, int drawableId, int titleId) {
         mDrawable = ctx.getResources().getDrawable(drawableId);
         mTitle = ctx.getResources().getString(titleId);
